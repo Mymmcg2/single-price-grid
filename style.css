@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla',sans-serif;
+    font-size: 16px;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    background: hsl(204, 43%, 93%)
+}
+
+.box{
+    padding: 2rem;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto
+}
+
+.wrapper{
+    display: grid;
+    background-color: white;
+    border-radius: 7px;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a" "b c";
+    overflow: hidden;
+}
+
+.join-our{
+    grid-area: a;
+}
+
+.join-our h2{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 1rem;
+}
+
+.join-our h3{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 1rem;
+}
+
+.join-our p{
+    color: hsl(218, 22%, 67%)
+}
+
+.monthly{
+    grid-area: b;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.monthly h3{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+.monthly h5{
+    display: flex;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+.monthly h5 span.price{
+    font-size: 30px;
+    padding-right: 10px;
+    color: white;
+}
+
+.monthly h5 span.month{
+    font-size: 15px;
+    padding-right: 10px;
+    color: hsl(179, 62%, 50%);
+}
+
+.monthly p{
+    color: white;
+    font-size: 15px;
+    padding-bottom: 2rem;
+}
+
+.btn{
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    border-radius: 3px;
+    padding: 12px 88px;
+    color: white;
+    font-size: 14px;
+    font-family: 'Karla',sans-serif;
+    font-weight: 700;
+}
+
+.why{
+    grid-area: c;
+    background-color: hsl(179, 62%, 50%);
+}
+
+.why,h3,p{
+    color: white;
+    padding-bottom: 1rem;
+}
+
+li{
+    list-style: none;
+    font-weight: 400;
+}
+
+@media only screen and (max-width: 425px){
+    .wrapper{
+        grid-template-columns: 100%;
+        grid-template-areas: "a" "b" "c";
+    }
+}
+
+
